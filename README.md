@@ -11,7 +11,7 @@ Multirotor control allocation and emergency landing
 
 추력 크기의 차이를 줄이기 위하여 아래 식 a를 제한조건으로 사용하였으며, 비행체의 자세를 적당히 유지하기 위하여 식 b를 적용하였다. 또한, 착륙이 가능한 위치를 제한하기 위해 식 3을 추가하였다.
 
-<img src="https://user-images.githubusercontent.com/70250834/99486470-9326c180-29a7-11eb-8660-219b3e6484a5.png" width="700" height="370">
+<img src="https://user-images.githubusercontent.com/70250834/99486470-9326c180-29a7-11eb-8660-219b3e6484a5.png" width="70" height="37">
 
 위 식에서 
 
