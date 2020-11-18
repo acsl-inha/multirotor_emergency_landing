@@ -13,8 +13,9 @@ Multirotor control allocation and emergency landing
 
 1)<img src="https://user-images.githubusercontent.com/70250834/99486470-9326c180-29a7-11eb-8660-219b3e6484a5.png" width="45%" height="35%">
 
+2)<img src = "https://user-images.githubusercontent.com/70250834/99487049-d7669180-29a8-11eb-9637-4005c1341631.png" width="45%" height="35%">
 
-위 식에서 
+3)<img src = "https://user-images.githubusercontent.com/70250834/99487061-ddf50900-29a8-11eb-9b14-e2dec94cd09d.png" width="45%" height="35%>
 
 ## 비상착륙 알고리듬
 1. 고장 검출이 끝난 시점에서 비행체의 위치와 속도를 초기값으로 한다.
