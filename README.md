@@ -9,6 +9,7 @@ Multirotor control allocation and emergency landing
 알고리듬은 비행체 구동을 위한 roll, pitch, yaw 자세각 명령과 추력 명령을 출력하여 비행체가 고장 위치에서 착륙 가능 조건을 만족하는 가장 가까운 위치로 최소 추력을 사용하여 착륙하도록 한다.
 알고리듬에는 다음의 식을 컨벡스화한 식이 사용되었다.
 
+<img src = "https://user-images.githubusercontent.com/70250834/99491238-bacd5800-29ae-11eb-81f3-6c9ea2601a35.png"  width="60%" height="60%">
 
 
 추력 크기의 차이를 줄이기 위하여 아래 식 1)를 제한조건으로 사용하였으며, 비행체의 자세를 적당히 유지하기 위하여 식 2)를 적용하였다. 또한, 착륙이 가능한 위치를 제한하기 위해 식 3)을 추가하였다.
