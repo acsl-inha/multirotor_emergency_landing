@@ -38,6 +38,12 @@ Multirotor control allocation and emergency landing
 
 * graph
 
+![sim1_thrust](https://user-images.githubusercontent.com/70250834/99490812-edc31c00-29ad-11eb-8386-d809ed6f1005.png)
+![sim1_Euler](https://user-images.githubusercontent.com/70250834/99490826-f287d000-29ad-11eb-9f9c-41b98efddacf.png)
+![sim1_rotor](https://user-images.githubusercontent.com/70250834/99490841-fb78a180-29ad-11eb-91b4-cda7b942680f.png)
+![sim1_NED](https://user-images.githubusercontent.com/70250834/99490846-fd426500-29ad-11eb-9b07-a2e84da06fbb.png)
+![sim1_3D](https://user-images.githubusercontent.com/70250834/99490858-029faf80-29ae-11eb-8b0f-22e12a4e600a.png)
+
 2. simulation 2
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
 * mission
@@ -50,5 +56,4 @@ Multirotor control allocation and emergency landing
 |yaw| 10 | 10 |
 
 * graph
-
 
