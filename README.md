@@ -48,7 +48,8 @@ Multirotor control allocation and emergency landing
 ![sim1_rotor](https://user-images.githubusercontent.com/70250834/99490841-fb78a180-29ad-11eb-91b4-cda7b942680f.png)
 ![sim1_NED](https://user-images.githubusercontent.com/70250834/99490846-fd426500-29ad-11eb-9b07-a2e84da06fbb.png)
 ![sim1_3D](https://user-images.githubusercontent.com/70250834/99490858-029faf80-29ae-11eb-8b0f-22e12a4e600a.png)
-![AnyConv com__Multirotor_lin_sim2](https://user-images.githubusercontent.com/70250834/100186481-73544800-2f29-11eb-9157-c806d0f3188a.png)
+
+![Multirotor_lin_sim2](https://user-images.githubusercontent.com/70250834/100188979-bbc23480-2f2e-11eb-902f-f4350447f637.gif)
 
 2. simulation 2
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
@@ -70,7 +71,8 @@ Multirotor control allocation and emergency landing
 ![sim2_rotor](https://user-images.githubusercontent.com/70250834/99490998-4db9c280-29ae-11eb-940d-4d19f6257f8f.png)
 ![sim2_NED](https://user-images.githubusercontent.com/70250834/99490882-0df2db00-29ae-11eb-8b39-152253b34f5a.png)
 ![sim2_3D](https://user-images.githubusercontent.com/70250834/99490888-10553500-29ae-11eb-9b1f-4809b2193a52.png)
-![AnyConv com__Multirotor_lin_sim1](https://user-images.githubusercontent.com/70250834/100186485-73ecde80-2f29-11eb-95ef-8a83c715af0a.png)
+
+![Multirotor_lin_sim1](https://user-images.githubusercontent.com/70250834/100188977-ba910780-2f2e-11eb-8df9-9f6dfc970f66.gif)
 
 3. simulation 3
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
@@ -121,7 +123,8 @@ Multirotor control allocation and emergency landing
 ![p2_rotor](https://user-images.githubusercontent.com/70250834/100186546-9121ad00-2f29-11eb-98c0-10b5776e559e.png)
 ![p2_NED](https://user-images.githubusercontent.com/70250834/100186545-90891680-2f29-11eb-9c02-41604ffea594.png)
 ![p2_3D](https://user-images.githubusercontent.com/70250834/100186542-8ff08000-2f29-11eb-95fb-03c4e230933d.png)
-![AnyConv com__Multirotor2](https://user-images.githubusercontent.com/70250834/100186499-7bac8300-2f29-11eb-91c4-4e842bdc2f0e.png)
+
+![Multirotor2](https://user-images.githubusercontent.com/70250834/100189023-cf6d9b00-2f2e-11eb-812d-c262d2dbdf6b.gif)
 
 5. simulation 5
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
@@ -146,7 +149,8 @@ Multirotor control allocation and emergency landing
 ![u1_rotor](https://user-images.githubusercontent.com/70250834/100186554-93840700-2f29-11eb-9bda-2c1c8471a347.png)
 ![u1_NED](https://user-images.githubusercontent.com/70250834/100186552-92eb7080-2f29-11eb-9b70-3e579987050f.png)
 ![u1_3D](https://user-images.githubusercontent.com/70250834/100186550-9252da00-2f29-11eb-9ed8-dd8b1860c324.png)
-![AnyConv com__Multirotor3](https://user-images.githubusercontent.com/70250834/100186497-7b13ec80-2f29-11eb-8019-ad0a221b08b9.png)
+
+![Multirotor3](https://user-images.githubusercontent.com/70250834/100189022-ce3c6e00-2f2e-11eb-8353-92fbcc015cce.gif)
 
 6. simulation 6
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
@@ -171,7 +175,8 @@ Multirotor control allocation and emergency landing
 ![u2_rotor](https://user-images.githubusercontent.com/70250834/100186564-954dca80-2f29-11eb-8033-41d60fa5741e.png)
 ![u2_NED](https://user-images.githubusercontent.com/70250834/100186561-94b53400-2f29-11eb-9802-b70fa17ad524.png)
 ![u2_3D](https://user-images.githubusercontent.com/70250834/100186557-941c9d80-2f29-11eb-9425-61ba5b933444.png)
-![AnyConv com__Multirotor4](https://user-images.githubusercontent.com/70250834/100186496-7a7b5600-2f29-11eb-99b4-041387172b12.png)
+
+![Multirotor4](https://user-images.githubusercontent.com/70250834/100189062-e0b6a780-2f2e-11eb-97d9-09329506218c.gif)
 
 7. simulation 7
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
@@ -196,4 +201,5 @@ Multirotor control allocation and emergency landing
 ![u3_rotor](https://user-images.githubusercontent.com/70250834/100187459-7d774600-2f2b-11eb-97a2-03ba71da8351.png)
 ![u3_NED](https://user-images.githubusercontent.com/70250834/100186572-97178e00-2f29-11eb-8c10-2e262242167c.png)
 ![u3_3D](https://user-images.githubusercontent.com/70250834/100186566-95e66100-2f29-11eb-8803-0de997915f2a.png)
-![AnyConv com__Multirotor5](https://user-images.githubusercontent.com/70250834/100186495-7a7b5600-2f29-11eb-9913-1c8b1a74e955.png)
+
+![Multirotor5](https://user-images.githubusercontent.com/70250834/100189058-deece400-2f2e-11eb-8575-b3daca77d1db.gif)
