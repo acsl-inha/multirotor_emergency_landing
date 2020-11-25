@@ -177,7 +177,7 @@ Multirotor control allocation and emergency landing
 
 ![u3_thrust](https://user-images.githubusercontent.com/70250834/100186575-97b02480-2f29-11eb-8615-c0ad861aefdc.png)
 ![u3_Euler](https://user-images.githubusercontent.com/70250834/100186571-967ef780-2f29-11eb-9389-452adae1c66f.png)
-![u3_rotor](https://user-images.githubusercontent.com/70250834/100186574-97b02480-2f29-11eb-8cdd-2f04bdbc8cdf.png)
+![u3_rotor](https://user-images.githubusercontent.com/70250834/100187459-7d774600-2f2b-11eb-97a2-03ba71da8351.png)
 ![u3_NED](https://user-images.githubusercontent.com/70250834/100186572-97178e00-2f29-11eb-8c10-2e262242167c.png)
 ![u3_3D](https://user-images.githubusercontent.com/70250834/100186566-95e66100-2f29-11eb-8803-0de997915f2a.png)
 ![AnyConv com__Multirotor5](https://user-images.githubusercontent.com/70250834/100186495-7a7b5600-2f29-11eb-9913-1c8b1a74e955.png)
