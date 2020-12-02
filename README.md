@@ -43,11 +43,13 @@ Multirotor control allocation and emergency landing
 * graph
 붉은 점선은 고장 시점, 푸른 점선은 알고리듬 적용 시점, 노란 점선은 착륙 시점이다.
 
-![sim1_thrust](https://user-images.githubusercontent.com/70250834/99490812-edc31c00-29ad-11eb-8386-d809ed6f1005.png)
-![sim1_Euler](https://user-images.githubusercontent.com/70250834/99490826-f287d000-29ad-11eb-9f9c-41b98efddacf.png)
-![sim1_rotor](https://user-images.githubusercontent.com/70250834/99490841-fb78a180-29ad-11eb-91b4-cda7b942680f.png)
-![sim1_NED](https://user-images.githubusercontent.com/70250834/99490846-fd426500-29ad-11eb-9b07-a2e84da06fbb.png)
-![sim1_3D](https://user-images.githubusercontent.com/70250834/99490858-029faf80-29ae-11eb-8b0f-22e12a4e600a.png)
+![sim1_thrust](https://user-images.githubusercontent.com/70250834/100834114-a5782380-34ae-11eb-89f7-482069d514e5.png)
+![sim1_Euler](https://user-images.githubusercontent.com/70250834/100834115-a610ba00-34ae-11eb-81e3-4acf04701ee4.png)
+![sim1_rotor](https://user-images.githubusercontent.com/70250834/100834116-a610ba00-34ae-11eb-8a14-29b905910206.png)
+![sim1_NED](https://user-images.githubusercontent.com/70250834/100834117-a6a95080-34ae-11eb-84e2-d826638b052c.png)
+![sim1_angle](https://user-images.githubusercontent.com/70250834/100834118-a741e700-34ae-11eb-9256-defdc5d3ffe3.png)
+![sim1_2D](https://user-images.githubusercontent.com/70250834/100834120-a7da7d80-34ae-11eb-8e9e-98e1fad4e11a.png)
+![sim1_3D](https://user-images.githubusercontent.com/70250834/100834119-a741e700-34ae-11eb-9127-0a03f815e18c.png)
 
 ![Multirotor_lin_sim2](https://user-images.githubusercontent.com/70250834/100188979-bbc23480-2f2e-11eb-902f-f4350447f637.gif)
 
