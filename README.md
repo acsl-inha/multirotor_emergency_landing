@@ -53,8 +53,12 @@ Multirotor control allocation and emergency landing
 
 2. simulation 2
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
-* 착륙 위치 제한은 위의 식 3)과 같다.
+* 착륙 위치 제한은 아래 식과 같다.
+
+<img src =  "https://user-images.githubusercontent.com/70250834/99487470-c66a5000-29a9-11eb-9b0b-5bb0b1f65191.png"   width="14%" height="7%">
+
 * Mission
+
 |time(s)|Altitude(m)|x(m)|y(m)|yaw|
 |--|--|--|--|--|
 |0~3.5|4|3|2|10|
@@ -83,6 +87,7 @@ Multirotor control allocation and emergency landing
 <img src = "https://user-images.githubusercontent.com/70250834/100188059-c4b20680-2f2c-11eb-95b6-4b481a7c2480.png" width="14%" height="7%">
 
 * Mission
+
 |time(s)|Altitude(m)|x(m)|y(m)|yaw|
 |--|--|--|--|--|
 |0~3.5|4|3|2|10|
@@ -111,6 +116,7 @@ Multirotor control allocation and emergency landing
 <img src = https://user-images.githubusercontent.com/70250834/100188060-c54a9d00-2f2c-11eb-93fe-008e9d6bc158.png width="14%" height="7%">
 
 * Mission
+
 |time(s)|Altitude(m)|x(m)|y(m)|yaw|
 |--|--|--|--|--|
 |0~3.5|4|3|2|10|
@@ -139,6 +145,7 @@ Multirotor control allocation and emergency landing
 <img src = https://user-images.githubusercontent.com/70250834/100188061-c5e33380-2f2c-11eb-9324-d7dba8e8a3b9.png width="18%" height="9%">
 
 * Mission
+
 |time(s)|Altitude(m)|x(m)|y(m)|yaw|
 |--|--|--|--|--|
 |0~3.5|4|3|2|10|
@@ -167,6 +174,7 @@ Multirotor control allocation and emergency landing
 <img src = https://user-images.githubusercontent.com/70250834/100188063-c67bca00-2f2c-11eb-9e2b-1b6a8386be8b.png width="18%" height="9%">
 
 * Mission
+
 |time(s)|Altitude(m)|x(m)|y(m)|yaw|
 |--|--|--|--|--|
 |0~3.5|4|3|2|10|
@@ -195,6 +203,7 @@ Multirotor control allocation and emergency landing
 <img src = https://user-images.githubusercontent.com/70250834/100188064-c67bca00-2f2c-11eb-8f49-3351ea68d565.png width="14%" height="7%">
 
 * Mission
+
 |time(s)|Altitude(m)|x(m)|y(m)|yaw|
 |--|--|--|--|--|
 |0~3.5|4|3|2|10|
