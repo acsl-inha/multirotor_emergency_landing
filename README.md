@@ -7,15 +7,13 @@ Multirotor control allocation and emergency landing
 ## 개요
 고장대응 알고리듬은 비행체의 고장 검출이 완료되었다는 가정하에 설계되었으며, 고장 검출 직후 실행된다.
 알고리듬은 비행체 구동을 위한 roll, pitch, yaw 자세각 명령과 추력 명령을 출력하여 비행체가 고장 위치에서 착륙 가능 조건을 만족하는 가장 가까운 위치로 최소 추력을 사용하여 착륙하도록 한다.
-알고리듬에는 다음의 식을 컨벡스화한 식이 사용되었다.
+알고리듬에는 다음의 식이 사용되었다.
 
-<img src = "https://user-images.githubusercontent.com/70250834/99491238-bacd5800-29ae-11eb-81f3-6c9ea2601a35.png"  width="60%" height="60%">
+<img src = "https://user-images.githubusercontent.com/70250834/101276230-aed6f800-37ee-11eb-9850-f8a17c04a0e7.png"  width="60%" height="60%">
 
 
-추력 크기의 차이를 줄이기 위하여 아래 식 1)를 제한조건으로 사용하였으며, 비행체의 자세를 적당히 유지하여 급기동을 방지하고자 식 2)를 적용하였다. 
-1. <img src="https://user-images.githubusercontent.com/70250834/99487289-4cd26200-29a9-11eb-8d37-3ae403aaa1f2.png" width="20%" height="10%">
+추력 크기의 차이를 줄이기 위하여 위의 식 (7)을 제한조건으로 사용하였으며, 비행체의 자세를 적당히 유지하여 급기동을 방지하고자 식 (8)을 적용하였다. 
 
-2. <img src = "https://user-images.githubusercontent.com/70250834/99487049-d7669180-29a8-11eb-9637-4005c1341631.png" width="40%" height="30%">
 
 ## 비상착륙 알고리듬
 1. 고장 검출이 끝난 시점에서 비행체의 위치와 속도를 초기값으로 한다.
@@ -40,21 +38,21 @@ Multirotor control allocation and emergency landing
 |Altitude| 2 | 
 |yaw| 10 |
 
-![sim1_2D](https://user-images.githubusercontent.com/70250834/100834120-a7da7d80-34ae-11eb-8e9e-98e1fad4e11a.png)
+![sim1_2D](https://user-images.githubusercontent.com/70250834/101276182-6fa8a700-37ee-11eb-881a-73724e81351d.png)
 
 * graph
 붉은 점선은 고장 시점, 푸른 점선은 알고리듬 적용 시점, 노란 점선은 착륙 시점이다.
 
-![sim1_thrust](https://user-images.githubusercontent.com/70250834/100834114-a5782380-34ae-11eb-89f7-482069d514e5.png)
-![sim1_Euler](https://user-images.githubusercontent.com/70250834/100834115-a610ba00-34ae-11eb-81e3-4acf04701ee4.png)
-![sim1_rotor](https://user-images.githubusercontent.com/70250834/100834116-a610ba00-34ae-11eb-8a14-29b905910206.png)
-![sim1_NED](https://user-images.githubusercontent.com/70250834/100834117-a6a95080-34ae-11eb-84e2-d826638b052c.png)
-![sim1_3D](https://user-images.githubusercontent.com/70250834/100834119-a741e700-34ae-11eb-9127-0a03f815e18c.png)
+![sim1_thrust](https://user-images.githubusercontent.com/70250834/101276189-71726a80-37ee-11eb-8fa7-4b829a95798b.png)
+![sim1_euler](https://user-images.githubusercontent.com/70250834/101276187-70d9d400-37ee-11eb-8155-42b849338272.png)
+![sim1_rotor](https://user-images.githubusercontent.com/70250834/101276188-71726a80-37ee-11eb-9060-22f3c29db74b.png)
+![sim1_body](https://user-images.githubusercontent.com/70250834/101276185-70d9d400-37ee-11eb-94b6-e0904bec0b9f.png)
+![sim1_3D](https://user-images.githubusercontent.com/70250834/101276183-6fa8a700-37ee-11eb-898f-68d6dd3dee99.png)
 
 착륙시 기체가 급기동하는 것을 방지하기 위하여 착륙 직전의 일부 스텝의 추력 명령이 Z축과 이루는 각을 6도로 제한하였다.
-![sim1_angle](https://user-images.githubusercontent.com/70250834/100834118-a741e700-34ae-11eb-9256-defdc5d3ffe3.png)
+![sim1_angle](https://user-images.githubusercontent.com/70250834/101276184-70413d80-37ee-11eb-8d69-cef27dcd42e2.png)
 
-![Multirotor_lin_sim2](https://user-images.githubusercontent.com/70250834/100188979-bbc23480-2f2e-11eb-902f-f4350447f637.gif)
+![Multirotor_lin_sim1](https://user-images.githubusercontent.com/70250834/101276212-84853a80-37ee-11eb-8d97-bacb8228967f.gif)
 
 2. simulation 2
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
@@ -68,21 +66,21 @@ Multirotor control allocation and emergency landing
 |Altitude| 4 | 4 |
 |yaw| 10 | 10 |
 
-![sim2_2D](https://user-images.githubusercontent.com/70250834/100834098-a27d3300-34ae-11eb-8109-501e0e8d270f.png)
+![sim2_2D](https://user-images.githubusercontent.com/70250834/101276190-720b0100-37ee-11eb-9351-b4f466fc7d1e.png)
 
 * graph
 붉은 점선은 고장 시점, 푸른 점선은 알고리듬 적용 시점, 노란 점선은 착륙 시점이다.
 
 ![sim2_Thrust](https://user-images.githubusercontent.com/70250834/100834087-9ee9ac00-34ae-11eb-8bdd-5c308fb826ea.png)
-![sim2_euler](https://user-images.githubusercontent.com/70250834/100834091-a01ad900-34ae-11eb-9d5f-426a5ca3ee18.png)
-![sim2_rotor](https://user-images.githubusercontent.com/70250834/100834093-a0b36f80-34ae-11eb-97ea-640686c50eda.png)
-![sim2_MED](https://user-images.githubusercontent.com/70250834/100834094-a14c0600-34ae-11eb-85b1-737aebafc58f.png)
-![sim2_3D](https://user-images.githubusercontent.com/70250834/100834097-a1e49c80-34ae-11eb-9bb1-74a7075fbcb3.png)
+![sim2_euler](https://user-images.githubusercontent.com/70250834/101276139-5ef83100-37ee-11eb-8599-47626b92aff2.png)
+![sim2_rotor](https://user-images.githubusercontent.com/70250834/101276142-60295e00-37ee-11eb-8391-1f0d01d38654.png)
+![sim2_NED](https://user-images.githubusercontent.com/70250834/101276140-5f90c780-37ee-11eb-8311-8b0135f0421d.png)
+![sim2_3D](https://user-images.githubusercontent.com/70250834/101276191-72a39780-37ee-11eb-9fa3-a70bbc4dc444.png)
 
 착륙시 기체가 급기동하는 것을 방지하기 위하여 착륙 직전의 일부 스텝의 추력 명령이 Z축과 이루는 각을 6도로 제한하였다.
-![sim2_angle](https://user-images.githubusercontent.com/70250834/100834095-a14c0600-34ae-11eb-8233-6b4045295dfe.png)
+![sim2_angle](https://user-images.githubusercontent.com/70250834/101276138-5d2e6d80-37ee-11eb-865e-1985b816593d.png)
 
-![Multirotor_lin_sim1](https://user-images.githubusercontent.com/70250834/100188977-ba910780-2f2e-11eb-8df9-9f6dfc970f66.gif)
+![Multirotor_lin_sim2](https://user-images.githubusercontent.com/70250834/101276210-83540d80-37ee-11eb-9fd6-e5b517eae4ba.gif)
 
 3. simulation 3
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
@@ -99,18 +97,21 @@ Multirotor control allocation and emergency landing
 |Altitude| 4 | 4 |
 |yaw| 10 | 10 |
 
+![pol1_2D](https://user-images.githubusercontent.com/70250834/101276165-69b2c600-37ee-11eb-9780-10c24f7ab169.png)
+
 * graph
 붉은 점선은 고장 시점, 푸른 점선은 알고리듬 적용 시점, 노란 점선은 착륙 시점이다.
 
-![pol1_Thrust](https://user-images.githubusercontent.com/70250834/100834112-a4df8d00-34ae-11eb-907a-5102dcdc37b6.png)
-![pol1_euler](https://user-images.githubusercontent.com/70250834/100834111-a4df8d00-34ae-11eb-9ee7-6d98970a8828.png)
-![pol1_rotor](https://user-images.githubusercontent.com/70250834/100834109-a446f680-34ae-11eb-8fbd-8f4466c2fd87.png)
-![pol1_NED](https://user-images.githubusercontent.com/70250834/100834107-a3ae6000-34ae-11eb-8806-df924a330951.png)
-![pol1_angle](https://user-images.githubusercontent.com/70250834/100834106-a3ae6000-34ae-11eb-90b7-d37bcb3e3aba.png)
-![pol1_3D](https://user-images.githubusercontent.com/70250834/100834103-a315c980-34ae-11eb-8e37-c0d9d8d966c4.png)
-![pol1_2D](https://user-images.githubusercontent.com/70250834/100834102-a27d3300-34ae-11eb-9522-7590c41aef5f.png)
+![pol1_thrust](https://user-images.githubusercontent.com/70250834/101276173-6c152000-37ee-11eb-84f4-8a2f13244845.png)
+![pol1_euler](https://user-images.githubusercontent.com/70250834/101276170-6ae3f300-37ee-11eb-9102-3aad6022dc8a.png)
+![pol1_rotor](https://user-images.githubusercontent.com/70250834/101276172-6b7c8980-37ee-11eb-80f5-b455eb4cb077.png)
+![pol1_NED](https://user-images.githubusercontent.com/70250834/101276171-6b7c8980-37ee-11eb-8c3d-53f0345e8b0b.png)
+![pol1_3D](https://user-images.githubusercontent.com/70250834/101276167-6a4b5c80-37ee-11eb-9058-cab67239a8ac.png)
 
-![Multirotor1](https://user-images.githubusercontent.com/70250834/100188844-6c7c0400-2f2e-11eb-8cab-5448e5a779e3.gif)
+착륙시 기체가 급기동하는 것을 방지하기 위하여 착륙 직전의 일부 스텝의 추력 명령이 Z축과 이루는 각을 6도로 제한하였다.
+![pol1_angle](https://user-images.githubusercontent.com/70250834/101276169-6a4b5c80-37ee-11eb-8121-624f306a6942.png)
+
+![Multirotor1 (1)](https://user-images.githubusercontent.com/70250834/101276216-85b66780-37ee-11eb-8d37-702dc7975472.gif)
 
 4. simulation 4
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
@@ -127,16 +128,21 @@ Multirotor control allocation and emergency landing
 |Altitude| 4 | 4 |
 |yaw| 10 | 10 |
 
+![pol2_2D](https://user-images.githubusercontent.com/70250834/101276175-6cadb680-37ee-11eb-8478-a8121431e6c5.png)
+
 * graph
 붉은 점선은 고장 시점, 푸른 점선은 알고리듬 적용 시점, 노란 점선은 착륙 시점이다.
 
-![p2_thrust](https://user-images.githubusercontent.com/70250834/100186547-91ba4380-2f29-11eb-9f78-0d5d9d87fbe6.png)
-![p2_Euler](https://user-images.githubusercontent.com/70250834/100186543-90891680-2f29-11eb-80ee-dc02c0d9540e.png)
-![p2_rotor](https://user-images.githubusercontent.com/70250834/100186546-9121ad00-2f29-11eb-98c0-10b5776e559e.png)
-![p2_NED](https://user-images.githubusercontent.com/70250834/100186545-90891680-2f29-11eb-9c02-41604ffea594.png)
-![p2_3D](https://user-images.githubusercontent.com/70250834/100186542-8ff08000-2f29-11eb-95fb-03c4e230933d.png)
+![pol2_thrust](https://user-images.githubusercontent.com/70250834/101276181-6f101080-37ee-11eb-909e-323abaa70cf5.png)
+![pol2_euler](https://user-images.githubusercontent.com/70250834/101276178-6ddee380-37ee-11eb-9d41-7565f674e110.png)
+![pol2_rotor](https://user-images.githubusercontent.com/70250834/101276180-6e777a00-37ee-11eb-94c9-eb29b666be29.png)
+![pol2_NED](https://user-images.githubusercontent.com/70250834/101276179-6ddee380-37ee-11eb-8789-4e83f3328796.png)
+![pol2_3D](https://user-images.githubusercontent.com/70250834/101276176-6cadb680-37ee-11eb-8ddc-645491831ce8.png)
 
-![Multirotor2](https://user-images.githubusercontent.com/70250834/100189023-cf6d9b00-2f2e-11eb-812d-c262d2dbdf6b.gif)
+착륙시 기체가 급기동하는 것을 방지하기 위하여 착륙 직전의 일부 스텝의 추력 명령이 Z축과 이루는 각을 6도로 제한하였다.
+![pol2_angle](https://user-images.githubusercontent.com/70250834/101276177-6d464d00-37ee-11eb-824c-0f4bf85034f9.png)
+
+![Multirotor2](https://user-images.githubusercontent.com/70250834/101276209-82bb7700-37ee-11eb-9777-9fc910344f5a.gif)
 
 5. simulation 5
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
@@ -153,16 +159,21 @@ Multirotor control allocation and emergency landing
 |Altitude| 4 | 4 |
 |yaw| 10 | 10 |
 
+![ball1_2D](https://user-images.githubusercontent.com/70250834/101276144-60c1f480-37ee-11eb-9316-728a11d17ccf.png)
+
 * graph
 붉은 점선은 고장 시점, 푸른 점선은 알고리듬 적용 시점, 노란 점선은 착륙 시점이다.
 
-![u1_thrust](https://user-images.githubusercontent.com/70250834/100186555-93840700-2f29-11eb-8dd9-5b98a30dc546.png)
-![u1_Euler](https://user-images.githubusercontent.com/70250834/100186551-9252da00-2f29-11eb-9ad4-f8c73bbc80ed.png)
-![u1_rotor](https://user-images.githubusercontent.com/70250834/100186554-93840700-2f29-11eb-9bda-2c1c8471a347.png)
-![u1_NED](https://user-images.githubusercontent.com/70250834/100186552-92eb7080-2f29-11eb-9b70-3e579987050f.png)
-![u1_3D](https://user-images.githubusercontent.com/70250834/100186550-9252da00-2f29-11eb-9ed8-dd8b1860c324.png)
+![ball1_thrust](https://user-images.githubusercontent.com/70250834/101276150-63bce500-37ee-11eb-96a3-5cbfb1b928de.png)
+![ball1_euler](https://user-images.githubusercontent.com/70250834/101276147-61f32180-37ee-11eb-993e-5bb747b1fe37.png)
+![ball1_rotor](https://user-images.githubusercontent.com/70250834/101276149-63244e80-37ee-11eb-837a-a78a31f35b4f.png)
+![ball1_NED](https://user-images.githubusercontent.com/70250834/101276148-628bb800-37ee-11eb-8f57-81265b382565.png)
+![ball1_3D](https://user-images.githubusercontent.com/70250834/101276145-615a8b00-37ee-11eb-9581-791b8ceb555b.png)
 
-![Multirotor3](https://user-images.githubusercontent.com/70250834/100189022-ce3c6e00-2f2e-11eb-8353-92fbcc015cce.gif)
+착륙시 기체가 급기동하는 것을 방지하기 위하여 착륙 직전의 일부 스텝의 추력 명령이 Z축과 이루는 각을 6도로 제한하였다.
+![ball1_angle](https://user-images.githubusercontent.com/70250834/101276146-61f32180-37ee-11eb-9253-eded9f0366a0.png)
+
+![Multirotor3](https://user-images.githubusercontent.com/70250834/101276213-851dd100-37ee-11eb-8493-c3fd3ab32692.gif)
 
 6. simulation 6
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
@@ -179,16 +190,21 @@ Multirotor control allocation and emergency landing
 |Altitude| 4 | 4 |
 |yaw| 10 | 10 |
 
+![ball2_2D](https://user-images.githubusercontent.com/70250834/101276151-63bce500-37ee-11eb-83bb-71997ddd2281.png)
+
 * graph
 붉은 점선은 고장 시점, 푸른 점선은 알고리듬 적용 시점, 노란 점선은 착륙 시점이다.
 
-![u2_thrust](https://user-images.githubusercontent.com/70250834/100186565-95e66100-2f29-11eb-990a-f9e8b3e1fc4c.png)
-![u2_Euler](https://user-images.githubusercontent.com/70250834/100186559-94b53400-2f29-11eb-8937-973278615499.png)
-![u2_rotor](https://user-images.githubusercontent.com/70250834/100186564-954dca80-2f29-11eb-8033-41d60fa5741e.png)
-![u2_NED](https://user-images.githubusercontent.com/70250834/100186561-94b53400-2f29-11eb-9802-b70fa17ad524.png)
-![u2_3D](https://user-images.githubusercontent.com/70250834/100186557-941c9d80-2f29-11eb-9425-61ba5b933444.png)
+![ball2_thrust](https://user-images.githubusercontent.com/70250834/101276157-661f3f00-37ee-11eb-9210-19c783f9e36e.png)
+![ball2_euler](https://user-images.githubusercontent.com/70250834/101276154-64ee1200-37ee-11eb-92dd-c6e9812d1f43.png)
+![ball2_rotor](https://user-images.githubusercontent.com/70250834/101276156-661f3f00-37ee-11eb-9dcc-bf2d435b30f0.png)
+![ball2_NED](https://user-images.githubusercontent.com/70250834/101276155-6586a880-37ee-11eb-89f9-7162113857d3.png)
+![ball2_3D](https://user-images.githubusercontent.com/70250834/101276152-64557b80-37ee-11eb-8e55-b36f1edbddea.png)
 
-![Multirotor4](https://user-images.githubusercontent.com/70250834/100189062-e0b6a780-2f2e-11eb-97d9-09329506218c.gif)
+착륙시 기체가 급기동하는 것을 방지하기 위하여 착륙 직전의 일부 스텝의 추력 명령이 Z축과 이루는 각을 6도로 제한하였다.
+![ball2_angle](https://user-images.githubusercontent.com/70250834/101276153-64ee1200-37ee-11eb-82a3-7ec83b55a566.png)
+
+![Multirotor4](https://user-images.githubusercontent.com/70250834/101276206-7f27f000-37ee-11eb-836b-f1f28a63a142.gif)
 
 7. simulation 7
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
@@ -205,13 +221,18 @@ Multirotor control allocation and emergency landing
 |Altitude| 4 | 4 |
 |yaw| 10 | 10 |
 
+![ball3_2D](https://user-images.githubusercontent.com/70250834/101276158-66b7d580-37ee-11eb-82fb-d73a55aba942.png)
+
 * graph
 붉은 점선은 고장 시점, 푸른 점선은 알고리듬 적용 시점, 노란 점선은 착륙 시점이다.
 
-![u3_thrust](https://user-images.githubusercontent.com/70250834/100186575-97b02480-2f29-11eb-8615-c0ad861aefdc.png)
-![u3_Euler](https://user-images.githubusercontent.com/70250834/100186571-967ef780-2f29-11eb-9389-452adae1c66f.png)
-![u3_rotor](https://user-images.githubusercontent.com/70250834/100187459-7d774600-2f2b-11eb-97a2-03ba71da8351.png)
-![u3_NED](https://user-images.githubusercontent.com/70250834/100186572-97178e00-2f29-11eb-8c10-2e262242167c.png)
-![u3_3D](https://user-images.githubusercontent.com/70250834/100186566-95e66100-2f29-11eb-8803-0de997915f2a.png)
+![ball3_thrust](https://user-images.githubusercontent.com/70250834/101276164-691a2f80-37ee-11eb-9c9e-64653b1e300e.png)
+![ball3_euler](https://user-images.githubusercontent.com/70250834/101276161-67e90280-37ee-11eb-81e7-52af77c7e642.png)
+![ball3_rotor](https://user-images.githubusercontent.com/70250834/101276163-691a2f80-37ee-11eb-829b-79ecf58d5ccc.png)
+![ball3_NED](https://user-images.githubusercontent.com/70250834/101276162-67e90280-37ee-11eb-93f4-89296230f27c.png)
+![ball3_3D](https://user-images.githubusercontent.com/70250834/101276159-66b7d580-37ee-11eb-8307-ed3a108500dc.png)
 
-![Multirotor5](https://user-images.githubusercontent.com/70250834/100189058-deece400-2f2e-11eb-8575-b3daca77d1db.gif)
+착륙시 기체가 급기동하는 것을 방지하기 위하여 착륙 직전의 일부 스텝의 추력 명령이 Z축과 이루는 각을 6도로 제한하였다.
+![ball3_angle](https://user-images.githubusercontent.com/70250834/101276160-67506c00-37ee-11eb-8c8c-f625997e8771.png)
+
+![Multirotor5](https://user-images.githubusercontent.com/70250834/101276208-818a4a00-37ee-11eb-89db-a0b8595f3c64.gif)
