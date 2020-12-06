@@ -29,7 +29,7 @@ Multirotor control allocation and emergency landing
 
 <img src =  "https://user-images.githubusercontent.com/70250834/99487470-c66a5000-29a9-11eb-9b0b-5bb0b1f65191.png"   width="14%" height="7%">
 
-* mission
+* Mission
 
 |time(s)|Altitude(m)|x(m)|y(m)|yaw|
 |--|--|--|--|--|
@@ -54,14 +54,11 @@ Multirotor control allocation and emergency landing
 2. simulation 2
 * 총 시뮬레이션 시간은 12초이며 고장 발생 시간은 6초, 고장 검출에 걸린 시간은 0.2초로 하였다.
 * 착륙 위치 제한은 위의 식 3)과 같다.
-* mission
-
-| |0~3.5s|0~6.2s|
-|--|--|--|
-|x| 3 | 5 |
-|y| 2 | 6 |
-|Altitude| 4 | 4 |
-|yaw| 10 | 10 |
+* Mission
+|time(s)|Altitude(m)|x(m)|y(m)|yaw|
+|--|--|--|--|--|
+|0~3.5|4|3|2|10|
+|3.5~6.2|4|5|6|10|
 
 ![sim2_2D](https://user-images.githubusercontent.com/70250834/101276190-720b0100-37ee-11eb-9351-b4f466fc7d1e.png)
 
@@ -85,14 +82,11 @@ Multirotor control allocation and emergency landing
 
 <img src = "https://user-images.githubusercontent.com/70250834/100188059-c4b20680-2f2c-11eb-95b6-4b481a7c2480.png" width="14%" height="7%">
 
-* mission
-
-| |0~3.5s|0~6.2s|
-|--|--|--|
-|x| 3 | 5 |
-|y| 2 | 6 |
-|Altitude| 4 | 4 |
-|yaw| 10 | 10 |
+* Mission
+|time(s)|Altitude(m)|x(m)|y(m)|yaw|
+|--|--|--|--|--|
+|0~3.5|4|3|2|10|
+|3.5~6.2|4|5|6|10|
 
 ![pol1_2D](https://user-images.githubusercontent.com/70250834/101276165-69b2c600-37ee-11eb-9780-10c24f7ab169.png)
 
@@ -116,14 +110,11 @@ Multirotor control allocation and emergency landing
 
 <img src = https://user-images.githubusercontent.com/70250834/100188060-c54a9d00-2f2c-11eb-93fe-008e9d6bc158.png width="14%" height="7%">
 
-* mission
-
-| |0~3.5s|0~6.2s|
-|--|--|--|
-|x| 3 | 5 |
-|y| 2 | 6 |
-|Altitude| 4 | 4 |
-|yaw| 10 | 10 |
+* Mission
+|time(s)|Altitude(m)|x(m)|y(m)|yaw|
+|--|--|--|--|--|
+|0~3.5|4|3|2|10|
+|3.5~6.2|4|5|6|10|
 
 ![pol2_2D](https://user-images.githubusercontent.com/70250834/101276175-6cadb680-37ee-11eb-8478-a8121431e6c5.png)
 
@@ -147,14 +138,11 @@ Multirotor control allocation and emergency landing
 
 <img src = https://user-images.githubusercontent.com/70250834/100188061-c5e33380-2f2c-11eb-9324-d7dba8e8a3b9.png width="18%" height="9%">
 
-* mission
-
-| |0~3.5s|0~6.2s|
-|--|--|--|
-|x| 3 | 5 |
-|y| 2 | 6 |
-|Altitude| 4 | 4 |
-|yaw| 10 | 10 |
+* Mission
+|time(s)|Altitude(m)|x(m)|y(m)|yaw|
+|--|--|--|--|--|
+|0~3.5|4|3|2|10|
+|3.5~6.2|4|5|6|10|
 
 ![ball1_2D](https://user-images.githubusercontent.com/70250834/101276144-60c1f480-37ee-11eb-9316-728a11d17ccf.png)
 
@@ -178,14 +166,11 @@ Multirotor control allocation and emergency landing
 
 <img src = https://user-images.githubusercontent.com/70250834/100188063-c67bca00-2f2c-11eb-9e2b-1b6a8386be8b.png width="18%" height="9%">
 
-* mission
-
-| |0~3.5s|0~6.2s|
-|--|--|--|
-|x| 3 | 5 |
-|y| 2 | 6 |
-|Altitude| 4 | 4 |
-|yaw| 10 | 10 |
+* Mission
+|time(s)|Altitude(m)|x(m)|y(m)|yaw|
+|--|--|--|--|--|
+|0~3.5|4|3|2|10|
+|3.5~6.2|4|5|6|10|
 
 ![ball2_2D](https://user-images.githubusercontent.com/70250834/101276151-63bce500-37ee-11eb-83bb-71997ddd2281.png)
 
@@ -209,14 +194,11 @@ Multirotor control allocation and emergency landing
 
 <img src = https://user-images.githubusercontent.com/70250834/100188064-c67bca00-2f2c-11eb-8f49-3351ea68d565.png width="14%" height="7%">
 
-* mission
-
-| |0~3.5s|0~6.2s|
-|--|--|--|
-|x| 3 | 5 |
-|y| 2 | 6 |
-|Altitude| 4 | 4 |
-|yaw| 10 | 10 |
+* Mission
+|time(s)|Altitude(m)|x(m)|y(m)|yaw|
+|--|--|--|--|--|
+|0~3.5|4|3|2|10|
+|3.5~6.2|4|5|6|10|
 
 ![ball3_2D](https://user-images.githubusercontent.com/70250834/101276158-66b7d580-37ee-11eb-82fb-d73a55aba942.png)
 
