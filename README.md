@@ -31,12 +31,9 @@ Multirotor control allocation and emergency landing
 
 * mission
 
-| |0~3.5s|
-|--|--|
-|x| 3 |
-|y| 1 |
-|Altitude| 2 | 
-|yaw| 10 |
+|time(s)|Altitude(m)|x(m)|y(m)|yaw|
+|--|--|--|--|--|
+|0~3.5|2|3|1|10|
 
 ![sim1_2D](https://user-images.githubusercontent.com/70250834/101276182-6fa8a700-37ee-11eb-881a-73724e81351d.png)
 
